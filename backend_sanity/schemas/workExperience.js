@@ -9,10 +9,22 @@ export default {
       title: 'Company',
       type: 'string',
     },
+    // {
+    //   name: 'desc',
+    //   title: 'Desc',
+    //   type: 'string',
+    // },
     {
-      name: 'desc',
-      title: 'Desc',
-      type: 'string',
+      name: 'descs',
+      title: 'Descs',
+      type: 'array',
+      of: [
+        {
+          name: 'desc',
+          title: 'Desc',
+          type: 'string',
+        },
+      ],
     },
   ],
 }

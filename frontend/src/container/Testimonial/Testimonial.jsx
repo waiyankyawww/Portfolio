@@ -32,16 +32,25 @@ const Testimonial = () => {
     <>
       {testimonials.length && (
         <>
+          <h2 className="head-text" style={{ marginBottom: 100 }}>
+            Education Background
+          </h2>
           <div className="app__testimonial-item app__flex">
             <img
               src={urlFor(testimonials[currentIndex].imgurl)}
               alt={testimonials[currentIndex].name}
             />
             <div className="app__testimonial-content">
-              <p className="p-text">{testimonials[currentIndex].feedback}</p>
+              <p className="p-text" style={{ margin: 5 }}>
+                {testimonials[currentIndex].feedback}
+              </p>
               <div>
-                <h4 className="bold-text">{testimonials[currentIndex].name}</h4>
-                <h5 className="p-text">{testimonials[currentIndex].company}</h5>
+                <h4 className="bold-text" style={{ margin: 5, marginTop: 10 }}>
+                  {testimonials[currentIndex].name}
+                </h4>
+                <h5 className="p-text" style={{ margin: 5 }}>
+                  {testimonials[currentIndex].company}
+                </h5>
               </div>
             </div>
           </div>

@@ -111,7 +111,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     margin-bottom: 1rem;
-    cursor: pointer;
+    // cursor: pointer;
 
     h4 {
       font-weight: 500;
@@ -126,16 +126,25 @@
 }
 
 .app__skills-exp-year {
-  margin-right: 3rem;
+  margin-right: 2rem;
 
   p {
-    font-weight: 800;
     color: var(--secondary-color);
   }
 
   @media screen and (max-width: 450px) {
     margin-right: 1rem;
   }
+}
+
+.app__skills-bullet-list {
+  margin-left: 1.5rem;
+  margin-top: 1rem;
+  font-size: 13px;
+}
+
+.app__skills-bullet-point {
+  padding: 0.2rem;
 }
 
 .skills-tooltip {

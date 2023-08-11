@@ -39,6 +39,18 @@ const Header = () => (
       </div>
     </motion.div>
 
+    {/* <motion.div
+      variants={scaleVariants}
+      whileInView={scaleVariants.whileInView}
+      className="app__header-circles"
+    >
+      {[images.docker, images.gcp, images.php].map((circle, index) => (
+        <div className="circle-cmp app__flex" key={`circle-${index}`}>
+          <img src={circle} alt="profile_bg" />
+        </div>
+      ))}
+    </motion.div> */}
+
     <motion.div
       whileInView={{ opacity: [0, 1] }}
       transition={{ duration: 0.5, delayChildren: 0.5 }}
@@ -59,11 +71,13 @@ const Header = () => (
       whileInView={scaleVariants.whileInView}
       className="app__header-circles"
     >
-      {[images.flutter, images.redux, images.sass].map((circle, index) => (
-        <div className="circle-cmp app__flex" key={`circle-${index}`}>
-          <img src={circle} alt="profile_bg" />
-        </div>
-      ))}
+      {[images.gcp, images.javascript, images.git, images.docker].map(
+        (circle, index) => (
+          <div className="circle-cmp app__flex" key={`circle-${index}`}>
+            <img src={circle} alt="profile_bg" />
+          </div>
+        )
+      )}
     </motion.div>
   </div>
 );

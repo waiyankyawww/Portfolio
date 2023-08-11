@@ -50,7 +50,7 @@ const Skills = () => {
           {experiences.map((experience) => (
             <motion.div className="app__skills-exp-item" key={experience.year}>
               <div className="app__skills-exp-year">
-                <p className="bold-text">{experience.year}</p>
+                <p className="p-text">{experience.year}</p>
               </div>
               <motion.div className="app__skills-exp-works">
                 {experience.works.map((work) => (
@@ -65,7 +65,18 @@ const Skills = () => {
                     >
                       <h4 className="bold-text">{work.name}</h4>
                       <p className="p-text">{work.company}</p>
-                      <p className="p-text">{work.desc}</p>
+                      <div>
+                        <ul className="app__skills-bullet-list">
+                          {work.descs.map((point, index) => (
+                            <li
+                              key={index}
+                              className="app__skills-bullet-point"
+                            >
+                              {point}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
                     </motion.div>
                     <ReactTooltip
                       id={work.name}
@@ -73,7 +84,7 @@ const Skills = () => {
                       arrowColor="#fff"
                       className="skills-tooltip"
                     >
-                      {work.desc}
+                      {work.descs}
                     </ReactTooltip>
                   </>
                 ))}

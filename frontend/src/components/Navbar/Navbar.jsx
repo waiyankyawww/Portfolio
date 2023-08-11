@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { HiMenuAlt4, HiX } from "react-icons/hi";
-import { easeInOut, easeOut, motion } from "framer-motion";
+import { color, easeInOut, easeOut, motion } from "framer-motion";
 
 import "./Navbar.scss";
 import { images } from "../../constants";
@@ -11,7 +11,13 @@ const Navbar = () => {
   return (
     <nav className="app__navbar">
       <div className="app__navbar-logo">
-        <img src={images.logo} alt="logo" />
+        {/* <img src={images.logo} alt="logo" /> */}
+        <p
+          className="bold-text"
+          style={{ fontWeight: 800, color: "#313bac", fontSize: 30 }}
+        >
+          Wai Yan Kyaw
+        </p>
       </div>
       <ul className="app__navbar-links">
         {/* map() => () is equals to map() => {return ()} */}
