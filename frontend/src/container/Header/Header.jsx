@@ -26,15 +26,33 @@ const Header = () => (
       <div className="app__header-badge">
         <div className="badge-cmp app__flex">
           <span>👋</span>
-          <div style={{ marginLeft: 20 }}>
+          <div style={{ marginLeft: 10 }}>
             <p className="p-text">Hello, I am</p>
-            <h1 className="head-text">Wai Yan Kyaw</h1>
+            <h1
+              className="head-text"
+              style={{
+                textTransform: "uppercase",
+                textAlign: "center",
+              }}
+            >
+              Wai Yan Kyaw
+            </h1>
           </div>
         </div>
 
         <div className="tag-cmp app__flex">
-          <p className="p-text">Software Engineer</p>
-          <p className="p-text">Full Stack Developer</p>
+          <p className="p-text" style={{ textAlign: "justify" }}>
+            {" "}
+            <span style={{ fontSize: 15, fontWeight: "bold" }}>
+              Software Engineer | Full Stack Developer,
+            </span>
+            &nbsp; who can learn and adapt the new technologies as the operation
+            needs. I have abilities to develop scripts for data management
+            operations, data manipulation operations, and business logic
+            operations. I also have professional experiences and skilled in
+            project management and software development life cycles using Agile
+            Methodologies.
+          </p>
         </div>
       </div>
     </motion.div>

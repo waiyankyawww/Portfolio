@@ -42,20 +42,16 @@ const Footer = () => {
 
   return (
     <>
-      <h2 className="head-text">Feels free to chat with me</h2>
+      <h2 className="head-text">Feel free to contact me</h2>
 
       <div className="app__footer-cards">
         <div className="app__footer-card ">
           <img src={images.email} alt="email" />
-          <a href="waiyankyaw132000@gmail.com" className="p-text">
-            waiyankyaw132000@gmail.com
-          </a>
+          <p className="p-text">waiyankyaw132000@gmail.com</p>
         </div>
         <div className="app__footer-card">
           <img src={images.mobile} alt="phone" />
-          <a href="tel: (+65) 88349459" className="p-text">
-            (+65) 88349459
-          </a>
+          <p className="p-text">(+65) 88349459</p>
         </div>
       </div>
       {!isFormSubmitted ? (
